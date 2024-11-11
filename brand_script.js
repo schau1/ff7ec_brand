@@ -6,7 +6,7 @@ const MY_HW_HP = 0;
 const MY_HW_HEAL = 0;
 const MY_HW_WEP = 0;
 
-// It really doesn't matter what these values are since we're comparing 2 things andd they're constant but whatever
+// It really doesn't matter what these values are since we're comparing 2 things and they're constant between them but whatever
 const BOOST_MP_ABILITY_PERCENT = 0.8
 const BOOST_ABILITY_PERCENT = 0.4
 const BOOST_ELEM_PERCENT = 1

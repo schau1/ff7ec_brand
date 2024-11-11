@@ -5,15 +5,23 @@
         body {
             background-color: #FFE4C4;
         }
+
+        #phyButton {
+            margin-right: 50px;
+        }
+
+        #magButton {
+            margin-right: 50px;
+        }
 	</style>	
 	<link rel="shortcut icon" href="#">
 	<title>FF7 Ever Crisis Brand</title>
 </head>
 <body>
-<h1 class="w3-margin w3-center">FF7EC Brand</h1>
+<h1 class="w3-margin w3-center">FFF7EC Branding Comparison for Damage</h1>
 
 <div class="w3-margin">
-	<h3><b>Instruction:</b> Compare 2 brands and display which one does more damage. Pick an effect for a brand and enter the value. If checking for physical damage, no need to enter magical info and vice versa. For weapon skill, enter the max with the multiplier. For example, OB6 Edgar's Coiled Blade should be 936 (780 * 1.2) instead of 780.</h3>
+	<h3><b>Instruction (by Snoopy):</b> This tool will aid you in comparing between two brands to maximize your damage potential. Pick an effect for a brand and then enter its value. Only fill out the PATK or MATK that corresponds to the brand that you selected. For instance, do not enter any magical info for physical stats. For Weapon C. Skill %, enter the highest threshold of that ability. To give you an illustration, OB6 Edgar's Coiled Blade is 780% * 1.2% when debuffed; enter in 936 in its corresponding text box.</h3>
 </div>
 
 <div class="w3-margin">
@@ -46,7 +54,7 @@
 <div class="w3-half w3-container" style="min-height:500px">
 	<div class="w3-margin">
 		<div class="w3-container w3-green">
-			<h3>Brand #1</h3>
+			<h3 class="w3-center">Brand #1</h3>
 		</div>
 	</div>
 
@@ -96,7 +104,7 @@
 <div class="w3-half w3-container" style="min-height:500px">
 	<div class="w3-margin">
 		<div class="w3-container w3-green">
-			<h3>Brand #2</h3>
+			<h3 class="w3-center">Brand #2</h3>
 		</div>
 	</div>
 
@@ -145,9 +153,9 @@
 </div>
 
 <div class="w3-center">
-	<div class="w3-bar">
-		<button class="w3-button w3-teal w3-xlarge" onClick="runComparePhysical()">Compare Physical</button>
-		<button class="w3-button w3-teal w3-xlarge" onClick="runCompareMagical()">Compare Magical</button>
+	<div class="w3-container">
+		<button id="phyButton" class="w3-button w3-teal w3-xlarge" onClick="runComparePhysical()">Compare Physical</button>
+		<button id="magButton"  class="w3-button w3-teal w3-xlarge w3-margin" onClick="runCompareMagical()">Compare Magical</button>
 	</div>
 </div>
 
@@ -157,7 +165,7 @@
 <footer>
   <div class="footer-copyright w3-center">
 	<div class="container w3-margin">
-	<h4>For bugs/feedbacks, contact Cantiga on discord &#169; 2024</h4>
+	<h4>For bugs/feedbacks, contact Cantiga on Discord &#169; 2024-2025</h4>
 	</div>
   </div>
 </footer>
