@@ -1,0 +1,167 @@
+<html lang="en">
+<head>	  
+	<link rel="stylesheet" href="w3.css">	
+	<style>
+        body {
+            background-color: #FFE4C4;
+        }
+	</style>	
+	<link rel="shortcut icon" href="#">
+	<title>FF7 Ever Crisis Brand</title>
+</head>
+<body>
+<h1 class="w3-margin w3-center">FF7EC Brand</h1>
+
+<div class="w3-margin">
+	<h3><b>Instruction:</b> Compare 2 brands and display which one does more damage. Pick an effect for a brand and enter the value. If checking for physical damage, no need to enter magical info and vice versa. For weapon skill, enter the max with the multiplier. For example, OB6 Edgar's Coiled Blade should be 936 (780 * 1.2) instead of 780.</h3>
+</div>
+
+<div class="w3-margin">
+	<div class="w3-container w3-green w3-margin">
+		<h3>Character Info</h3>
+	</div>
+
+	<form class="w3-container w3-margin-top">
+		<label>PATK</label>
+		<input class="w3-input w3-margin-bottom" type="number" value="1000" id="charPatk">
+
+		<label>Highwind Boost PATK %</label>
+		<input class="w3-input w3-margin-bottom" type="number" id="charHwPatk">
+
+		<label>MATK</label>
+		<input class="w3-input w3-margin-bottom" type="number" value="1000" id="charMatk">
+
+		<label>Highwind Boost MATK %</label>
+		<input class="w3-input w3-margin-bottom" type="number" id="charHwMatk">
+
+		<label>Weapon C-Skill %</label>
+		<input class="w3-input w3-margin-bottom" type="number" value="936" id="charSkill">
+
+		<label>Highwind Boost Wpn. C. Ability Pot %</label>
+		<input class="w3-input w3-margin-bottom" type="number" id="charHwSkill">
+
+	</form>
+</div>
+
+<div class="w3-half w3-container" style="min-height:500px">
+	<div class="w3-margin">
+		<div class="w3-container w3-green">
+			<h3>Brand #1</h3>
+		</div>
+	</div>
+
+	<div class="w3-margin">
+		<form class="w3-container">
+			<div>
+				<label>Effect 1:</label>
+				<input class="w3-radio" name="op1effec1" type="radio">
+				<label>PATK</label>
+				<input class="w3-radio w3-margin-left" name="op1effec1" type="radio">
+				<label>MATK</label>
+				<input class="w3-radio w3-margin-left" name="op1effec1" type="radio">
+				<label>C. &amp; U.C. Ability Effect</label>
+				<input class="w3-radio w3-margin-left" name="op1effec1" type="radio">
+				<label>Other</label>
+				<input class="w3-input w3-margin-top w3-margin-bottom" type="number" id="b1eff1">
+			</div>
+
+			<div>
+				<label>Effect 2:</label>
+				<input class="w3-radio" name="op1effec2" type="radio">
+				<label>PATK</label>
+				<input class="w3-radio w3-margin-left" name="op1effec2" type="radio">
+				<label>MATK</label>
+				<input class="w3-radio w3-margin-left" name="op1effec2" type="radio">
+				<label>C. &amp; U.C. Ability Effect</label>
+				<input class="w3-radio w3-margin-left" name="op1effec2" type="radio">
+				<label>Other</label>
+				<input class="w3-input w3-margin-top w3-margin-bottom" type="number" id="b1eff2">
+			</div>
+
+			<div>
+				<label>Effect 3:</label>
+				<input class="w3-radio" name="op1effec3" type="radio">
+				<label>PATK</label>
+				<input class="w3-radio w3-margin-left" name="op1effec3" type="radio">
+				<label>MATK</label>
+				<input class="w3-radio w3-margin-left" name="op1effec3" type="radio">
+				<label>C. &amp; U.C. Ability Effect</label>
+				<input class="w3-radio w3-margin-left" name="op1effec3" type="radio">
+				<label>Other</label>
+				<input class="w3-input w3-margin-top w3-margin-bottom" type="number" id="b1eff3">
+			</div>
+		</form>
+	</div>
+</div>
+<div class="w3-half w3-container" style="min-height:500px">
+	<div class="w3-margin">
+		<div class="w3-container w3-green">
+			<h3>Brand #2</h3>
+		</div>
+	</div>
+
+	<div class="w3-margin">
+		<form class="w3-container">
+			<div>
+				<label>Effect 1:</label>
+				<input class="w3-radio" name="op2effec1" type="radio">
+				<label>PATK</label>
+				<input class="w3-radio w3-margin-left" name="op2effec1" type="radio">
+				<label>MATK</label>
+				<input class="w3-radio w3-margin-left" name="op2effec1" type="radio">
+				<label>C. &amp; U.C. Ability Effect</label>
+				<input class="w3-radio w3-margin-left" name="op2effec1" type="radio">
+				<label>Other</label>
+				<input class="w3-input w3-margin-top w3-margin-bottom" type="number" id="b2eff1">
+			</div>
+
+			<div>
+				<label>Effect 2:</label>
+				<input class="w3-radio" name="op2effec2" type="radio">
+				<label>PATK</label>
+				<input class="w3-radio w3-margin-left" name="op2effec2" type="radio">
+				<label>MATK</label>
+				<input class="w3-radio w3-margin-left" name="op2effec2" type="radio">
+				<label>C. &amp; U.C. Ability Effect</label>
+				<input class="w3-radio w3-margin-left" name="op2effec2" type="radio">
+				<label>Other</label>
+				<input class="w3-input w3-margin-top w3-margin-bottom" type="number" id="b2eff2">
+			</div>
+
+			<div>
+				<label>Effect 3:</label>
+				<input class="w3-radio" name="op3effec3" type="radio">
+				<label>PATK</label>
+				<input class="w3-radio w3-margin-left" name="op3effec3" type="radio">
+				<label>MATK</label>
+				<input class="w3-radio w3-margin-left" name="op3effec3" type="radio">
+				<label>C. &amp; U.C. Ability Effect</label>
+				<input class="w3-radio w3-margin-left" name="op3effec3" type="radio">
+				<label>Other</label>
+				<input class="w3-input w3-margin-top w3-margin-bottom" type="number" id="b2eff3">
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="w3-center">
+	<div class="w3-bar">
+		<button class="w3-button w3-teal w3-xlarge" onClick="runComparePhysical()">Compare Physical</button>
+		<button class="w3-button w3-teal w3-xlarge" onClick="runCompareMagical()">Compare Magical</button>
+	</div>
+</div>
+
+<div class="w3-panel w3-center" id="result">
+</div>
+
+<footer>
+  <div class="footer-copyright w3-center">
+	<div class="container w3-margin">
+	<h4>For bugs/feedbacks, contact Cantiga on discord &#169; 2024</h4>
+	</div>
+  </div>
+</footer>
+<script src="brand_script.js"></script>
+<script src="w3.js"></script>	
+</body>
+</html>
